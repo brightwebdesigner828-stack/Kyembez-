@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kyembez.vercel.app/sitemap.xml
