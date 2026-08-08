@@ -392,6 +392,12 @@
       const newUrl = stat === 'All' ? window.location.pathname : `?status=${stat}`;
       window.history.pushState({}, '', newUrl);
 
+      // Dynamically update the canonical tag based on the active tab filter
+      let canonicalTag = document.querySelector('link[rel="canonical"]');
+      if (canonicalTag) {
+        canonicalTag.href = stat === 'All' ? 'https://kyembez.vercel.app/' : `https://kyembez.vercel.app/?status=${stat}`;
+      }
+
       document.querySelectorAll('.tab-btn').forEach(b => {
         b.classList.remove('bg-red-100', 'text-brand');
         b.classList.add('text-gray-500');
