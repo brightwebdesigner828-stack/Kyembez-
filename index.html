@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <!-- Primary SEO Meta Tags -->
   <title id="pageTitle">KYEMBEZ Property Management | Real Estate Uganda</title>
   <meta name="title" content="KYEMBEZ Property Management | Real Estate Uganda">
@@ -12,38 +11,62 @@
   <meta name="keywords" content="KYEMBEZ, Property Management Uganda, Real Estate Kampala, Rent House Uganda, Land for Sale Uganda">
   <meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://kyembez-five.vercel.app/" id="canonicalTag" />
+  <!-- CANONICAL TAG TO PREVENT DUPLICATE CONTENT PENALTIES -->
+  <link rel="canonical" href="https://kyembez.vercel.app/" />
+
+  <!-- GOOGLE SITE VERIFICATION -->
   <meta name="google-site-verification" content="0gnqCZmjHBVATsy0lJ2vGmxE11tRBcPhep7rlZfatEk" />
 
+  <!-- OPEN GRAPH / SOCIAL MEDIA PREVIEW -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://kyembez-five.vercel.app/" />
+  <meta property="og:url" content="https://kyembez.vercel.app/" />
   <meta property="og:title" content="KYEMBEZ Property Management" />
   <meta property="og:description" content="Find or list houses, land, and commercial property across Uganda." />
   <meta property="og:image" content="https://i.ibb.co/ZzhxJFK0/IMG-3180.jpg" />
   <meta property="og:site_name" content="KYEMBEZ Property Management" />
 
+  <!-- FAVICON & APPLE TOUCH ICONS -->
   <link rel="icon" type="image/jpeg" href="https://i.ibb.co/ZzhxJFK0/IMG-3180.jpg" />
   <link rel="apple-touch-icon" href="https://i.ibb.co/ZzhxJFK0/IMG-3180.jpg" />
 
-  <script type="application/ld+json">
+  <!-- SCHEMA STRUCTURED DATA -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "KYEMBEZ Property Management",
   "image": "https://i.ibb.co/ZzhxJFK0/IMG-3180.jpg",
-  "@id": "https://kyembez-five.vercel.app/",
-  "url": "https://kyembez-five.vercel.app/",
-  "address": { "@type": "PostalAddress", "streetAddress": "king's junction Road", "addressLocality": "Kampala", "addressCountry": "UG" },
-  "geo": { "@type": "GeoCoordinates", "latitude": 0.347596, "longitude": 32.582197 },
-  "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:00", "closes": "18:00" },
+  "@id": "https://kyembez.vercel.app/",
+  "url": "https://kyembez.vercel.app/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "king's junction Road",
+    "addressLocality": "Kampala",
+    "addressCountry": "UG"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 0.347596,
+    "longitude": 32.582197
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
   "priceRange": "$$"
 }
-  </script>
+</script> 
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Tailwind CSS & FontAwesome Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script>
@@ -51,237 +74,189 @@
       theme: {
         extend: {
           colors: {
-            ink:  '#17140F',
-            card: '#211C15',
-            clay: '#C1502E',
-            gold: '#E7A33E',
-            palm: '#2C4A3B',
-            sand: '#F1E9D8',
-            ash:  '#9A9284',
-            line: 'rgba(241,233,216,0.09)'
-          },
-          fontFamily: {
-            display: ['"Fraunces"', 'serif'],
-            body: ['Inter', 'sans-serif'],
-            mono: ['"IBM Plex Mono"', 'monospace']
+            brand: '#e84c4c', 
+            dark: '#13141c',  
+            card: '#1c1d27',  
           }
         }
       }
     }
   </script>
-
-  <style>
-    body { background-color: #17140F; }
-    .font-display { font-optical-sizing: auto; }
-    .signboard::before {
-      content: ''; position: absolute; top: -6px; left: 18px;
-      width: 8px; height: 8px; border-radius: 50%;
-      background: #17140F; box-shadow: 0 0 0 2px rgba(241,233,216,0.5);
-      z-index: 20;
-    }
-    .marquee-track { animation: marquee 24s linear infinite; }
-    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    @media (prefers-reduced-motion: reduce) {
-      .marquee-track { animation: none; }
-    }
-    .bg-dots {
-      background-image: radial-gradient(rgba(241,233,216,0.08) 1px, transparent 1px);
-      background-size: 18px 18px;
-    }
-    :focus-visible { outline: 2px solid #E7A33E; outline-offset: 2px; }
-    ::-webkit-scrollbar { height: 6px; width: 6px; }
-    ::-webkit-scrollbar-thumb { background: rgba(241,233,216,0.15); border-radius: 4px; }
-    @keyframes pulseSoft { 0%,100% { opacity: 1; } 50% { opacity: .5; } }
-    .skeleton { animation: pulseSoft 1.6s ease-in-out infinite; }
-  </style>
 </head>
-<body class="bg-ink text-ash font-body min-h-screen flex flex-col antialiased">
+<body class="bg-dark text-gray-300 font-sans min-h-screen flex flex-col">
 
   <!-- HEADER -->
-  <header class="bg-ink/95 backdrop-blur border-b border-line sticky top-0 z-30 px-4 h-16 flex items-center justify-between">
-    <div class="flex items-center space-x-2.5">
-      <div class="bg-clay text-sand w-8 h-8 rounded-lg flex items-center justify-center shrink-0"><i class="fa-solid fa-house text-sm"></i></div>
+  <header class="bg-dark border-b border-gray-800 sticky top-0 z-30 px-4 h-16 flex items-center justify-between">
+    <div class="flex items-center space-x-2 font-bold text-lg text-white">
+      <div class="bg-brand text-white p-1.5 rounded-lg leading-none"><i class="fa-solid fa-house"></i></div>
       <div class="flex flex-col leading-none">
-        <span class="text-[9px] text-ash font-mono uppercase tracking-[0.2em]">Uganda</span>
-        <span class="font-display italic text-lg text-sand tracking-tight">Kyembez <span class="not-italic font-body text-sm text-ash font-normal">Management</span></span>
+        <span class="text-[10px] text-gray-400 font-normal uppercase tracking-wider">Uganda</span>
+        <span>KYEMBEZ <span class="font-normal">Management</span></span>
       </div>
     </div>
-    <div class="flex items-center space-x-3">
-      <div id="adminCtrl" class="hidden items-center space-x-3">
-        <button onclick="openModal('setM')" class="text-ash hover:text-sand transition" title="Settings"><i class="fa-solid fa-gear"></i></button>
-        <button onclick="openModal('addM')" class="text-gold hover:text-sand transition text-sm font-semibold font-mono uppercase tracking-wide"><i class="fa-solid fa-plus me-1"></i>Add</button>
-        <button onclick="logout()" class="text-ash hover:text-clay transition text-sm" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+    <div class="flex items-center space-x-2">
+      <div id="adminCtrl" class="hidden flex space-x-2">
+        <button onclick="openModal('setM')" class="text-gray-400 hover:text-white" title="Settings"><i class="fa-solid fa-gear"></i></button>
+        <button onclick="openModal('addM')" class="text-brand hover:text-white text-sm font-semibold"><i class="fa-solid fa-plus me-1"></i>Add</button>
+        <button onclick="logout()" class="text-gray-400 hover:text-red-500 text-sm" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
       </div>
-      <button id="loginBtn" onclick="openModal('logM')" class="text-ash hover:text-sand transition text-sm" title="Admin Login"><i class="fa-solid fa-lock"></i></button>
-      <a id="waBtn" href="#" target="_blank" rel="noopener" class="bg-clay hover:bg-clay/80 text-sand px-3 py-1.5 rounded-lg text-xs font-mono font-semibold uppercase tracking-wide shadow-lg transition">WhatsApp</a>
+      <button id="loginBtn" onclick="openModal('logM')" class="text-gray-400 hover:text-white text-sm" title="Admin Login"><i class="fa-solid fa-lock"></i></button>
+      <a id="waBtn" href="#" target="_blank" class="ml-2 bg-brand hover:bg-red-600 text-white px-3 py-1.5 rounded-lg text-xs font-semibold shadow-lg">WhatsApp</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="relative bg-ink bg-dots py-14 md:py-20 px-4 overflow-hidden border-b border-line">
-    <div class="max-w-2xl mx-auto text-center relative z-10">
-      <span class="inline-flex items-center gap-2 bg-clay/10 text-clay text-[10px] font-mono uppercase tracking-[0.2em] px-3 py-1.5 rounded-full border border-clay/30 mb-7">
-        <i class="fa-solid fa-map-pin"></i><span>Uganda's property marketplace</span>
-      </span>
-      <h1 class="font-display italic font-semibold text-4xl md:text-6xl text-sand tracking-tight mb-5 leading-[1.05]">Find your plot<br>in Uganda.</h1>
-      <p class="text-ash text-sm md:text-base mb-10 max-w-md mx-auto">Verified homes, land and commercial space for rent or sale — from Kampala's suburbs to upcountry towns.</p>
-    </div>
-
-    <!-- location ticker -->
-    <div class="relative z-10 -mx-4 mb-10 overflow-hidden">
-      <div class="bg-gold text-ink py-2 -rotate-1 shadow-lg">
-        <div id="tickerTrack" class="marquee-track flex whitespace-nowrap font-mono text-[11px] font-bold uppercase tracking-[0.15em]">
-          <!-- filled by JS: two identical spans for seamless loop -->
-        </div>
+  <!-- HERO SECTION & SEARCH FILTER -->
+  <section class="relative bg-gradient-to-b from-[#2a1a25] to-dark py-12 px-4 text-center">
+    <div class="max-w-2xl mx-auto">
+      <div class="inline-flex items-center space-x-2 bg-white/10 text-white text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-white/20 mb-6">
+        <i class="fa-solid fa-shield-check text-brand"></i><span>Uganda's Property Marketplace</span>
       </div>
-    </div>
-
-    <!-- SEARCH CARD -->
-    <div class="max-w-md mx-auto relative z-10">
-      <div class="signboard relative bg-sand text-ink p-5 rounded-2xl shadow-2xl border border-black/5">
-        <div class="flex space-x-1 border-b border-ink/10 pb-3 mb-4 text-sm font-medium font-mono uppercase tracking-wide overflow-x-auto" id="statusTabs">
-          <button type="button" onclick="setStatusFilter('All', this)" class="tab-btn bg-clay/15 text-clay px-3 py-1.5 rounded-lg flex items-center space-x-1.5 shrink-0 transition"><i class="fa-solid fa-layer-group text-[10px]"></i><span>All</span></button>
-          <button type="button" onclick="setStatusFilter('Rent', this)" class="tab-btn text-ink/50 hover:text-ink px-3 py-1.5 rounded-lg flex items-center space-x-1.5 shrink-0 transition"><i class="fa-solid fa-tag text-[10px]"></i><span>Rent</span></button>
-          <button type="button" onclick="setStatusFilter('Sale', this)" class="tab-btn text-ink/50 hover:text-ink px-3 py-1.5 rounded-lg flex items-center space-x-1.5 shrink-0 transition"><i class="fa-solid fa-money-bill-wave text-[10px]"></i><span>Buy</span></button>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">Find the right property</h1>
+      <p class="text-gray-400 text-sm md:text-base mb-8 max-w-lg mx-auto">Search thousands of homes, land and commercial property for rent or sale — across every major city in Uganda.</p>
+      
+      <!-- SEARCH BOX -->
+      <div class="bg-gray-100 text-gray-800 p-4 rounded-2xl shadow-2xl text-left max-w-md mx-auto">
+        
+        <!-- RENT / SALE / ALL TABS -->
+        <div class="flex space-x-2 border-b border-gray-200 pb-3 mb-4 text-sm font-medium overflow-x-auto" id="statusTabs">
+          <button type="button" onclick="setStatusFilter('All', this)" class="tab-btn bg-red-100 text-brand px-3 py-1.5 rounded-lg flex items-center space-x-1 shrink-0"><i class="fa-solid fa-layer-group text-xs"></i><span>All</span></button>
+          <button type="button" onclick="setStatusFilter('Rent', this)" class="tab-btn text-gray-500 hover:text-gray-800 px-3 py-1.5 rounded-lg flex items-center space-x-1 shrink-0"><i class="fa-solid fa-tag text-xs"></i><span>Rent</span></button>
+          <button type="button" onclick="setStatusFilter('Sale', this)" class="tab-btn text-gray-500 hover:text-gray-800 px-3 py-1.5 rounded-lg flex items-center space-x-1 shrink-0"><i class="fa-solid fa-money-bill-wave text-xs"></i><span>Buy</span></button>
         </div>
 
         <div class="space-y-4">
           <div>
-            <label class="block text-[10px] font-bold font-mono text-ink/50 uppercase tracking-wide mb-1">Search</label>
-            <div class="relative">
-              <i class="fa-solid fa-magnifying-glass absolute left-0 top-1/2 -translate-y-1/2 text-ink/30 text-xs"></i>
-              <input id="fQ" type="text" placeholder="Try 'Ntinda' or 'bedsitter'" oninput="filter()" class="w-full bg-transparent text-ink font-semibold text-sm pl-5 border-b border-ink/15 pb-1.5 focus:outline-none focus:border-clay placeholder:text-ink/30 placeholder:font-normal">
-            </div>
+            <label class="block text-[10px] font-bold text-gray-500 uppercase tracking-wide mb-1">Location</label>
+            <select id="fLoc" class="w-full bg-transparent text-gray-900 font-semibold border-b border-gray-300 pb-1 focus:outline-none focus:border-brand">
+              <option value="All">Region, district or town</option>
+              <option value="Ntinda">Ntinda</option>
+              <option value="Kira">Kira</option>
+              <option value="Kabalagala">Kabalagala</option>
+            </select>
           </div>
-          <div class="grid grid-cols-2 gap-4">
-            <div>
-              <label class="block text-[10px] font-bold font-mono text-ink/50 uppercase tracking-wide mb-1">Location</label>
-              <select id="fLoc" onchange="filter()" class="w-full bg-transparent text-ink font-semibold text-sm border-b border-ink/15 pb-1.5 focus:outline-none focus:border-clay">
-                <option value="All">Any area</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-[10px] font-bold font-mono text-ink/50 uppercase tracking-wide mb-1">Type</label>
-              <select id="fType" onchange="filter()" class="w-full bg-transparent text-ink font-semibold text-sm border-b border-ink/15 pb-1.5 focus:outline-none focus:border-clay">
-                <option value="All">Any type</option>
-                <option value="House">Whole House</option>
-                <option value="Land">Land / Plot</option>
-                <option value="1-Bedroom">1-Bedroom</option>
-                <option value="2-Bedroom">2-Bedroom</option>
-                <option value="Bedsitter">Bedsitter</option>
-                <option value="Commercial">Commercial</option>
-              </select>
-            </div>
+          <div>
+            <label class="block text-[10px] font-bold text-gray-500 uppercase tracking-wide mb-1">Property Type</label>
+            <select id="fType" class="w-full bg-transparent text-gray-900 font-semibold border-b border-gray-300 pb-1 focus:outline-none focus:border-brand">
+              <option value="All">Any type</option>
+              <option value="House">Whole House</option>
+              <option value="Land">Land / Plot</option>
+              <option value="1-Bedroom">1-Bedroom</option>
+              <option value="2-Bedroom">2-Bedroom</option>
+              <option value="Bedsitter">Bedsitter</option>
+              <option value="Commercial">Commercial</option>
+            </select>
           </div>
+          <button onclick="filter()" class="w-full bg-brand hover:bg-red-600 text-white font-bold py-3 rounded-xl mt-2 flex justify-center items-center space-x-2 transition">
+            <i class="fa-solid fa-magnifying-glass"></i><span>Search</span>
+          </button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CATEGORIES -->
-  <section class="py-10 px-4 max-w-5xl mx-auto w-full">
+  <section class="py-8 px-4 max-w-5xl mx-auto w-full">
     <div class="mb-6">
-      <span class="text-clay text-[10px] font-mono font-bold uppercase tracking-[0.2em]">Browse by type</span>
-      <h2 class="text-2xl font-display font-semibold text-sand mt-1">What kind of property are you after?</h2>
+      <span class="text-brand text-[10px] font-bold uppercase tracking-wider">Browse By Type</span>
+      <h2 class="text-2xl font-bold text-white mt-1">What kind of property are you after?</h2>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <button type="button" onclick="document.getElementById('fType').value='House'; filter();" class="text-left bg-card p-5 rounded-2xl border border-line hover:border-clay/40 transition">
-        <div class="bg-clay/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-house text-clay"></i></div>
-        <h3 class="text-sand font-semibold text-sm">Houses</h3>
-        <p class="text-ash text-xs mt-0.5">Whole properties</p>
-      </button>
-      <button type="button" onclick="document.getElementById('fType').value='Land'; filter();" class="text-left bg-card p-5 rounded-2xl border border-line hover:border-clay/40 transition">
-        <div class="bg-clay/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-map text-clay"></i></div>
-        <h3 class="text-sand font-semibold text-sm">Land & Plots</h3>
-        <p class="text-ash text-xs mt-0.5">For sale & development</p>
-      </button>
-      <button type="button" onclick="document.getElementById('fType').value='1-Bedroom'; filter();" class="text-left bg-card p-5 rounded-2xl border border-line hover:border-clay/40 transition">
-        <div class="bg-clay/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-building text-clay"></i></div>
-        <h3 class="text-sand font-semibold text-sm">Flats & Apts</h3>
-        <p class="text-ash text-xs mt-0.5">1 & 2 Bedrooms</p>
-      </button>
-      <button type="button" onclick="document.getElementById('fType').value='Commercial'; filter();" class="text-left bg-card p-5 rounded-2xl border border-line hover:border-clay/40 transition">
-        <div class="bg-clay/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-store text-clay"></i></div>
-        <h3 class="text-sand font-semibold text-sm">Commercial</h3>
-        <p class="text-ash text-xs mt-0.5">Shops & offices</p>
-      </button>
+      <div class="bg-card p-5 rounded-2xl border border-gray-800 hover:border-brand/50 transition cursor-pointer" onclick="document.getElementById('fType').value='House'; filter();">
+        <div class="bg-brand/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-house text-brand"></i></div>
+        <h3 class="text-white font-bold text-sm">Houses</h3>
+        <p class="text-gray-500 text-xs">Whole properties</p>
+      </div>
+      <div class="bg-card p-5 rounded-2xl border border-gray-800 hover:border-brand/50 transition cursor-pointer" onclick="document.getElementById('fType').value='Land'; filter();">
+        <div class="bg-brand/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-map text-brand"></i></div>
+        <h3 class="text-white font-bold text-sm">Land & Plots</h3>
+        <p class="text-gray-500 text-xs">For sale & development</p>
+      </div>
+      <div class="bg-card p-5 rounded-2xl border border-gray-800 hover:border-brand/50 transition cursor-pointer" onclick="document.getElementById('fType').value='1-Bedroom'; filter();">
+        <div class="bg-brand/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-building text-brand"></i></div>
+        <h3 class="text-white font-bold text-sm">Flats & Apts</h3>
+        <p class="text-gray-500 text-xs">1 & 2 Bedrooms</p>
+      </div>
+      <div class="bg-card p-5 rounded-2xl border border-gray-800 hover:border-brand/50 transition cursor-pointer" onclick="document.getElementById('fType').value='Commercial'; filter();">
+        <div class="bg-brand/10 w-10 h-10 flex items-center justify-center rounded-xl mb-3"><i class="fa-solid fa-store text-brand"></i></div>
+        <h3 class="text-white font-bold text-sm">Commercial</h3>
+        <p class="text-gray-500 text-xs">Shops & Offices</p>
+      </div>
     </div>
   </section>
 
-  <!-- LISTINGS -->
-  <main id="listings" class="flex-1 max-w-5xl mx-auto px-4 py-10 w-full border-t border-line">
+  <!-- LISTINGS GRID -->
+  <main id="listings" class="flex-1 max-w-5xl mx-auto px-4 py-8 w-full border-t border-gray-800">
     <div class="flex justify-between items-end mb-6">
-      <h2 class="text-2xl font-display font-semibold text-sand">Active listings</h2>
-      <span id="resCount" class="text-xs text-ash font-mono">Loading…</span>
+      <h2 class="text-2xl font-bold text-white">Active Listings</h2>
+      <span id="resCount" class="text-xs text-gray-400">Loading properties...</span>
     </div>
     <div id="grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </main>
 
-  <!-- CTA -->
-  <section class="bg-palm py-14 px-4 text-center relative overflow-hidden border-y border-line">
-    <div class="absolute inset-0 opacity-[0.08] flex justify-center items-center pointer-events-none">
-      <i class="fa-solid fa-city text-9xl text-sand"></i>
+  <!-- PROPERTY MANAGEMENT CTA -->
+  <section class="bg-brand py-12 px-4 text-center relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 flex justify-center items-center pointer-events-none">
+      <i class="fa-solid fa-city text-9xl"></i>
     </div>
     <div class="max-w-2xl mx-auto relative z-10">
-      <span class="text-gold font-mono font-bold uppercase tracking-[0.2em] text-[10px] mb-3 block">For landlords & owners</span>
-      <h2 class="text-3xl font-display font-semibold text-sand mb-4">Let us manage your property</h2>
-      <p class="text-sand/80 mb-8 text-sm md:text-base">Do you own land, a building, or multiple rentals? We handle everything from tenant screening and rent collection to maintenance and property sales — maximize your returns with zero stress.</p>
-      <a id="manageBtn" href="#" target="_blank" rel="noopener" class="bg-sand hover:bg-white text-palm font-bold font-mono uppercase tracking-wide text-sm py-3 px-8 rounded-xl shadow-xl transition inline-flex items-center space-x-2">
-        <i class="fa-solid fa-handshake"></i><span>Partner with us</span>
+      <span class="text-white font-bold uppercase tracking-widest text-[10px] mb-2 block">For Landlords & Owners</span>
+      <h2 class="text-3xl font-extrabold text-white mb-4">Let Us Manage Your Property</h2>
+      <p class="text-white/90 mb-8 text-sm md:text-base">Do you own land, a building, or multiple rentals? We handle everything from tenant screening and rent collection to maintenance and property sales. Maximize your returns with zero stress.</p>
+      <a id="manageBtn" href="#" target="_blank" class="bg-white hover:bg-gray-100 text-brand font-bold py-3 px-8 rounded-xl shadow-xl transition inline-flex items-center space-x-2">
+        <i class="fa-solid fa-handshake"></i><span>Partner With Us</span>
       </a>
     </div>
   </section>
 
   <!-- WHY CHOOSE US -->
-  <section class="bg-ink py-14 px-4">
-    <div class="max-w-3xl mx-auto text-center md:text-left md:flex gap-10 items-center">
+  <section class="bg-[#181924] py-12 px-4">
+    <div class="max-w-3xl mx-auto text-center md:text-left md:flex gap-8 items-center">
       <div class="md:w-1/2 mb-8 md:mb-0">
-        <span class="text-clay text-[10px] font-mono font-bold uppercase tracking-[0.2em]">Why Kyembez</span>
-        <h2 class="text-3xl font-display font-semibold text-sand mt-2 mb-4">A smarter, safer way to find & manage property</h2>
-        <p class="text-ash text-sm">We built Kyembez to take the guesswork and risk out of real estate in Uganda.</p>
+        <span class="text-brand text-[10px] font-bold uppercase tracking-wider">Why Property Management</span>
+        <h2 class="text-3xl font-bold text-white mt-2 mb-4">A smarter, safer way to find & manage property</h2>
+        <p class="text-gray-400 text-sm">We built KYEMBEZ to take the guesswork and risk out of real estate in Uganda.</p>
       </div>
       <div class="md:w-1/2 space-y-6 text-left">
         <div class="flex items-start space-x-4">
-          <div class="bg-clay/10 p-2.5 rounded-full mt-0.5"><i class="fa-solid fa-shield-check text-clay w-4 h-4 flex items-center justify-center"></i></div>
-          <div><h4 class="text-sand font-semibold text-sm">Verified listings</h4><p class="text-ash text-xs mt-1">Every listing is screened by our team, so you only see properties that are real and available.</p></div>
+          <div class="bg-brand/10 p-2 rounded-full mt-1"><i class="fa-solid fa-shield-check text-brand w-5 h-5 flex items-center justify-center"></i></div>
+          <div><h4 class="text-white font-bold text-sm">Verified listings</h4><p class="text-gray-500 text-xs mt-1">Every listing is screened by our team, so you only see properties that are real and available.</p></div>
         </div>
         <div class="flex items-start space-x-4">
-          <div class="bg-clay/10 p-2.5 rounded-full mt-0.5"><i class="fa-solid fa-users text-clay w-4 h-4 flex items-center justify-center"></i></div>
-          <div><h4 class="text-sand font-semibold text-sm">Expert management</h4><p class="text-ash text-xs mt-1">We handle the heavy lifting for owners, ensuring your properties remain profitable and well-kept.</p></div>
+          <div class="bg-brand/10 p-2 rounded-full mt-1"><i class="fa-solid fa-users text-brand w-5 h-5 flex items-center justify-center"></i></div>
+          <div><h4 class="text-white font-bold text-sm">Expert Management</h4><p class="text-gray-500 text-xs mt-1">We handle the heavy lifting for owners, ensuring your properties remain profitable and well-kept.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MODALS -->
-  <div id="logM" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden" onclick="if(event.target===this) openModal('logM')">
-    <form onsubmit="login(event)" class="bg-card border border-line rounded-2xl p-6 max-w-xs w-full shadow-2xl">
-      <div class="flex justify-between items-center mb-4"><h3 class="font-display font-semibold text-sand">Admin login</h3><button type="button" onclick="openModal('logM')" class="text-ash hover:text-sand text-xl leading-none">&times;</button></div>
-      <input type="email" id="logEmail" placeholder="Email" required autocomplete="username" class="w-full bg-ink border border-line text-sand text-sm p-3 rounded-lg mb-3 focus:outline-none focus:border-clay placeholder:text-ash">
-      <input type="password" id="logPass" placeholder="Password" required autocomplete="current-password" class="w-full bg-ink border border-line text-sand text-sm p-3 rounded-lg mb-2 focus:outline-none focus:border-clay placeholder:text-ash">
-      <p id="logErr" class="text-clay text-xs mb-3 hidden"></p>
-      <button class="w-full bg-clay hover:bg-clay/80 text-sand font-semibold font-mono uppercase tracking-wide text-sm py-3 rounded-lg transition">Access dashboard</button>
-      <button type="button" onclick="resetPassword()" class="w-full text-ash hover:text-sand text-xs mt-3 font-mono">Forgot password?</button>
+  <!-- MODAL WINDOWS -->
+  <!-- Admin Login Modal -->
+  <div id="logM" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden">
+    <form onsubmit="login(event)" class="bg-card border border-gray-700 rounded-2xl p-6 max-w-xs w-full shadow-2xl">
+      <div class="flex justify-between items-center mb-4"><h3 class="font-bold text-white">Admin Login</h3><button type="button" onclick="openModal('logM')" class="text-gray-500 hover:text-white">&times;</button></div>
+      <input type="password" id="pin" placeholder="Enter PIN (1234)" required class="w-full bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg mb-4 focus:outline-none focus:border-brand">
+      <button class="w-full bg-brand text-white font-bold py-3 rounded-lg">Access Dashboard</button>
     </form>
   </div>
 
-  <div id="addM" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden" onclick="if(event.target===this) openModal('addM')">
-    <form id="property-form" onsubmit="addProp(event)" class="bg-card border border-line rounded-2xl p-6 max-w-md w-full shadow-2xl max-h-[90vh] overflow-y-auto">
-      <div class="flex justify-between items-center mb-4"><h3 class="font-display font-semibold text-sand">List a property</h3><button type="button" onclick="openModal('addM')" class="text-ash hover:text-sand text-xl leading-none">&times;</button></div>
-
-      <input type="text" id="pT" placeholder="Property title" required class="w-full bg-ink border border-line text-sand text-sm p-3 rounded-lg mb-3 placeholder:text-ash">
-
+  <!-- Add Listing Modal -->
+  <div id="addM" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden">
+    <form id="property-form" onsubmit="addProp(event)" class="bg-card border border-gray-700 rounded-2xl p-6 max-w-md w-full shadow-2xl">
+      <div class="flex justify-between items-center mb-4"><h3 class="font-bold text-white">List a Property</h3><button type="button" onclick="openModal('addM')" class="text-gray-500 hover:text-white">&times;</button></div>
+      
+      <input type="text" id="pT" placeholder="Property Title" required class="w-full bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg mb-3">
+      
       <div class="grid grid-cols-2 gap-3 mb-3">
-        <select id="pStat" class="bg-ink border border-line text-sand text-sm p-3 rounded-lg">
+        <select id="pStat" class="bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg">
           <option value="Rent">For Rent</option>
           <option value="Sale">For Sale</option>
         </select>
-        <input type="number" id="pP" min="1" placeholder="Price (UGX)" required class="bg-ink border border-line text-sand text-sm p-3 rounded-lg placeholder:text-ash">
+        <input type="number" id="pP" placeholder="Price (UGX)" required class="bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg">
       </div>
 
       <div class="grid grid-cols-2 gap-3 mb-3">
-        <input type="text" id="pL" placeholder="Location (e.g. Kira)" required class="bg-ink border border-line text-sand text-sm p-3 rounded-lg placeholder:text-ash">
-        <select id="pTy" class="w-full bg-ink border border-line text-sand text-sm p-3 rounded-lg">
+        <input type="text" id="pL" placeholder="Location (e.g. Kira)" required class="bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg">
+        <select id="pTy" class="w-full bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg">
           <option value="House">Whole House</option>
           <option value="Land">Land / Plot</option>
           <option value="1-Bedroom">1-Bedroom</option>
@@ -291,40 +266,41 @@
         </select>
       </div>
 
-      <textarea id="pI" placeholder="Paste image URLs separated by commas&#10;(e.g. https://site.com/img1.jpg, https://site.com/img2.jpg)" required class="w-full bg-ink border border-line text-sand text-sm p-3 rounded-lg mb-4 h-24 resize-none placeholder:text-ash"></textarea>
-
-      <button class="w-full bg-clay hover:bg-clay/80 text-sand font-semibold font-mono uppercase tracking-wide text-sm py-3 rounded-lg shadow-lg transition">Publish listing</button>
+      <textarea id="pI" placeholder="Paste Image URLs separated by commas&#10;(e.g. https://site.com/img1.jpg, https://site.com/img2.jpg)" required class="w-full bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg mb-4 h-24 resize-none"></textarea>
+      
+      <button class="w-full bg-brand text-white font-bold py-3 rounded-lg shadow-lg">Publish Listing</button>
     </form>
   </div>
 
-  <div id="setM" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden" onclick="if(event.target===this) openModal('setM')">
-    <form onsubmit="saveSet(event)" class="bg-card border border-line rounded-2xl p-6 max-w-xs w-full shadow-2xl">
-      <div class="flex justify-between items-center mb-4"><h3 class="font-display font-semibold text-sand">Settings</h3><button type="button" onclick="openModal('setM')" class="text-ash hover:text-sand text-xl leading-none">&times;</button></div>
-      <label class="block text-xs text-ash mb-1">WhatsApp number</label>
-      <input type="text" id="sPh" placeholder="256700000000" class="w-full bg-ink border border-line text-sand text-sm p-3 rounded-lg mb-3 placeholder:text-ash">
-      <label class="block text-xs text-ash mb-1">New password (optional)</label>
-      <input type="password" id="sPass" placeholder="Leave blank to keep current" autocomplete="new-password" class="w-full bg-ink border border-line text-sand text-sm p-3 rounded-lg mb-1 placeholder:text-ash">
-      <p id="setErr" class="text-clay text-xs mb-3 hidden"></p>
-      <button class="w-full bg-card border border-line hover:border-clay/40 text-sand font-semibold font-mono uppercase tracking-wide text-sm py-3 rounded-lg transition">Save changes</button>
+  <!-- Settings Modal -->
+  <div id="setM" class="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4 hidden">
+    <form onsubmit="saveSet(event)" class="bg-card border border-gray-700 rounded-2xl p-6 max-w-xs w-full shadow-2xl">
+      <div class="flex justify-between items-center mb-4"><h3 class="font-bold text-white">Settings</h3><button type="button" onclick="openModal('setM')" class="text-gray-500 hover:text-white">&times;</button></div>
+      <label class="block text-xs text-gray-400 mb-1">WhatsApp Number</label>
+      <input type="text" id="sPh" placeholder="256700000000" class="w-full bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg mb-3">
+      <label class="block text-xs text-gray-400 mb-1">Change PIN</label>
+      <input type="password" id="sPin" placeholder="New PIN" class="w-full bg-dark border border-gray-700 text-white text-sm p-3 rounded-lg mb-4">
+      <button class="w-full bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 rounded-lg">Save Changes</button>
     </form>
   </div>
 
   <!-- FOOTER -->
-  <footer class="bg-ink py-8 text-center text-xs text-ash/70 border-t border-line">
-    <div class="flex justify-center space-x-4 mb-4 text-ash text-lg">
-      <i class="fa-brands fa-facebook hover:text-sand cursor-pointer transition"></i>
-      <i class="fa-brands fa-x-twitter hover:text-sand cursor-pointer transition"></i>
-      <i class="fa-brands fa-instagram hover:text-sand cursor-pointer transition"></i>
+  <footer class="bg-dark py-8 text-center text-xs text-gray-600 border-t border-gray-800">
+    <div class="flex justify-center space-x-4 mb-4 text-gray-500 text-lg">
+      <i class="fa-brands fa-facebook hover:text-white cursor-pointer"></i>
+      <i class="fa-brands fa-x-twitter hover:text-white cursor-pointer"></i>
+      <i class="fa-brands fa-instagram hover:text-white cursor-pointer"></i>
     </div>
     <p>Privacy Policy &nbsp;|&nbsp; Terms of Use</p>
     <p class="mt-2">&copy; 2026 KYEMBEZ Property Management. All rights reserved.</p>
   </footer>
 
+  <!-- FIREBASE ENGINE INTEGRATION -->
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 
   <script>
+    // 1. KYEMBEZ Firebase Config
     const firebaseConfig = {
       apiKey: "AIzaSyDAk57oOW4pX8fGAofjJ0_16wJOiom-Fx0",
       authDomain: "kyembez.firebaseapp.com",
@@ -335,72 +311,24 @@
       measurementId: "G-D7BVRKDMX0"
     };
 
+    // 2. Initialize Firestore Database
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
 
     let props = [];
-    let settingsDoc = { ph: "256700000000" };
+    let cfg = JSON.parse(localStorage.getItem('k_c_3')) || {ph:"256700000000", pin:"1234"};
     let isAdmin = false;
     let currentStatus = 'All';
-    const BASE_LOCATIONS = ['Ntinda', 'Kira', 'Kabalagala'];
-    const FALLBACK_IMG = 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80';
 
+    // Check URL query params on load (e.g. ?status=Rent)
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has('status')) currentStatus = urlParams.get('status');
-
-    function escapeHtml(str) {
-      return String(str ?? '').replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]));
+    if(urlParams.has('status')) {
+      currentStatus = urlParams.get('status');
     }
 
-    function showSkeleton() {
-      document.getElementById('grid').innerHTML = Array.from({ length: 6 }).map(() => `
-        <div class="skeleton bg-card border border-line rounded-2xl overflow-hidden">
-          <div class="h-48 bg-line"></div>
-          <div class="p-4 space-y-2">
-            <div class="h-2.5 w-1/3 bg-line rounded"></div>
-            <div class="h-3.5 w-2/3 bg-line rounded"></div>
-            <div class="h-5 w-1/2 bg-line rounded mt-3"></div>
-          </div>
-        </div>`).join('');
-    }
-    showSkeleton();
-
-    function showError(message) {
-      document.getElementById('grid').innerHTML = `
-        <div class="col-span-full text-center py-12 text-ash">
-          <i class="fa-solid fa-triangle-exclamation text-clay text-2xl mb-3"></i>
-          <p class="text-sm mb-4">${escapeHtml(message)}</p>
-          <button onclick="initFirebaseListener()" class="bg-card border border-line hover:border-clay/40 text-sand text-xs font-mono uppercase tracking-wide px-4 py-2 rounded-lg transition">Try again</button>
-        </div>`;
-      document.getElementById('resCount').innerText = 'Error';
-    }
-
-    function updateTicker(locations) {
-      const list = locations && locations.length ? locations : BASE_LOCATIONS;
-      const text = list.map(l => escapeHtml(l)).join(' &nbsp;•&nbsp; ');
-      const track = document.getElementById('tickerTrack');
-      track.innerHTML = `<span class="shrink-0 pr-6">${text}</span><span class="shrink-0 pr-6" aria-hidden="true">${text}</span>`;
-    }
-    updateTicker(BASE_LOCATIONS);
-
-    function updateLocationOptions(list) {
-      const fromData = list.map(p => (p.l || '').trim()).filter(Boolean);
-      const merged = Array.from(new Set([...BASE_LOCATIONS, ...fromData].map(s => s.trim())))
-        .sort((a, b) => a.localeCompare(b));
-      const sel = document.getElementById('fLoc');
-      const current = sel.value;
-      sel.innerHTML = '<option value="All">Any area</option>' +
-        merged.map(l => `<option value="${escapeHtml(l)}">${escapeHtml(l)}</option>`).join('');
-      if (merged.some(l => l.toLowerCase() === current.toLowerCase())) sel.value = current;
-      updateTicker(merged);
-    }
-
-    let unsubscribe = null;
+    // 3. Real-time Firebase Listener
     function initFirebaseListener() {
-      showSkeleton();
-      document.getElementById('resCount').innerText = 'Loading…';
-      if (unsubscribe) unsubscribe();
-      unsubscribe = db.collection("properties").onSnapshot((snapshot) => {
+      db.collection("properties").onSnapshot((snapshot) => {
         props = [];
         snapshot.forEach((doc) => {
           const data = doc.data();
@@ -414,205 +342,157 @@
             images: data.images || (data.i ? [data.i] : [])
           });
         });
-
-        updateLocationOptions(props);
-
+        
+        // Sync button UI with initial query param if present
         document.querySelectorAll('.tab-btn').forEach(b => {
-          b.classList.remove('bg-clay/15', 'text-clay');
-          b.classList.add('text-ink/50');
-          const label = b.innerText.trim().toLowerCase();
-          const matches = (label === 'all' && currentStatus === 'All') ||
-            (currentStatus !== 'All' && label.includes(currentStatus.toLowerCase()));
-          if (matches) {
-            b.classList.remove('text-ink/50');
-            b.classList.add('bg-clay/15', 'text-clay');
+          b.classList.remove('bg-red-100', 'text-brand');
+          b.classList.add('text-gray-500');
+          if(b.innerText.toLowerCase().includes(currentStatus.toLowerCase()) || (currentStatus === 'All' && b.innerText.includes('All'))) {
+            b.classList.remove('text-gray-500');
+            b.classList.add('bg-red-100', 'text-brand');
           }
         });
 
         filter();
       }, (error) => {
         console.error("Firebase read error:", error);
-        showError("Couldn't load listings right now. Check your connection and try again.");
       });
     }
 
     initFirebaseListener();
 
-    // Public settings doc (WhatsApp number) — readable by everyone, writable only by signed-in admins.
-    db.collection("settings").doc("site").onSnapshot((doc) => {
-      if (doc.exists) {
-        const data = doc.data();
-        if (data.ph) settingsDoc.ph = data.ph;
+    function openModal(id){ 
+      document.getElementById(id).classList.toggle('hidden'); 
+    }
+    
+    function login(e){ 
+      e.preventDefault(); 
+      if(document.getElementById('pin').value === cfg.pin){ 
+        isAdmin = true; 
+        document.getElementById('adminCtrl').classList.remove('hidden'); 
+        document.getElementById('loginBtn').classList.add('hidden'); 
+        openModal('logM'); 
+        filter(); 
+      } else {
+        alert('Wrong PIN'); 
       }
-      filter();
-    }, (error) => console.error("Settings read error:", error));
-
-    // Firebase Auth drives admin state — the PIN is gone, this checks a real signed-in user.
-    firebase.auth().onAuthStateChanged((user) => {
-      isAdmin = !!user;
-      document.getElementById('adminCtrl').classList.toggle('hidden', !isAdmin);
-      document.getElementById('adminCtrl').classList.toggle('flex', isAdmin);
-      document.getElementById('loginBtn').classList.toggle('hidden', isAdmin);
-      filter();
-    });
-
-    function openModal(id) {
-      document.getElementById(id).classList.toggle('hidden');
     }
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key !== 'Escape') return;
-      ['logM', 'addM', 'setM'].forEach(id => {
-        const el = document.getElementById(id);
-        if (!el.classList.contains('hidden')) el.classList.add('hidden');
-      });
-    });
-
-    function login(e) {
-      e.preventDefault();
-      const email = document.getElementById('logEmail').value.trim();
-      const pass = document.getElementById('logPass').value;
-      const errEl = document.getElementById('logErr');
-      errEl.classList.add('hidden');
-
-      firebase.auth().signInWithEmailAndPassword(email, pass).then(() => {
-        e.target.reset();
-        openModal('logM');
-        // onAuthStateChanged handles the rest of the UI update.
-      }).catch((err) => {
-        errEl.innerText = 'Wrong email or password.';
-        errEl.classList.remove('hidden');
-      });
-    }
-
-    function resetPassword() {
-      const email = document.getElementById('logEmail').value.trim();
-      if (!email) {
-        alert('Enter your admin email above first, then tap "Forgot password?".');
-        return;
-      }
-      firebase.auth().sendPasswordResetEmail(email).then(() => {
-        alert('Password reset email sent to ' + email + '.');
-      }).catch((err) => alert('Could not send reset email: ' + err.message));
-    }
-
-    function logout() {
-      firebase.auth().signOut();
-      // onAuthStateChanged handles the UI update.
+    
+    function logout(){ 
+      isAdmin = false; 
+      document.getElementById('adminCtrl').classList.add('hidden'); 
+      document.getElementById('loginBtn').classList.remove('hidden'); 
+      filter(); 
     }
 
     function setStatusFilter(stat, btn) {
       currentStatus = stat;
-
+      
+      // Update URL without reloading page so Googlebot sees unique parameter structures
       const newUrl = stat === 'All' ? window.location.pathname : `?status=${stat}`;
       window.history.pushState({}, '', newUrl);
 
-      const canonicalTag = document.getElementById('canonicalTag');
+      // Dynamically update the canonical tag based on the active tab filter
+      let canonicalTag = document.querySelector('link[rel="canonical"]');
       if (canonicalTag) {
-        canonicalTag.href = stat === 'All' ? 'https://kyembez-five.vercel.app/' : `https://kyembez-five.vercel.app/?status=${stat}`;
+        canonicalTag.href = stat === 'All' ? 'https://kyembez.vercel.app/' : `https://kyembez.vercel.app/?status=${stat}`;
       }
 
       document.querySelectorAll('.tab-btn').forEach(b => {
-        b.classList.remove('bg-clay/15', 'text-clay');
-        b.classList.add('text-ink/50');
+        b.classList.remove('bg-red-100', 'text-brand');
+        b.classList.add('text-gray-500');
       });
-      btn.classList.remove('text-ink/50');
-      btn.classList.add('bg-clay/15', 'text-clay');
+      btn.classList.remove('text-gray-500');
+      btn.classList.add('bg-red-100', 'text-brand');
       filter();
     }
+    
+    function render(list){
+      document.getElementById('waBtn').href = `https://wa.me/${cfg.ph}`;
+      document.getElementById('manageBtn').href = `https://wa.me/${cfg.ph}?text=${encodeURIComponent('Hi KYEMBEZ, I am a property owner and I would like to discuss having you manage my property/land.')}`;
+      
+      document.getElementById('resCount').innerText = `${list.length} results`;
+      
+      // Update page title dynamically based on filter to avoid generic duplicate titles
+      if(currentStatus !== 'All') {
+        document.getElementById('pageTitle').innerText = `Properties for ${currentStatus} | KYEMBEZ Property Management`;
+      } else {
+        document.getElementById('pageTitle').innerText = `KYEMBEZ Property Management | Real Estate Uganda`;
+      }
 
-    function render(list) {
-      document.getElementById('waBtn').href = `https://wa.me/${settingsDoc.ph}`;
-      document.getElementById('manageBtn').href = `https://wa.me/${settingsDoc.ph}?text=${encodeURIComponent('Hi KYEMBEZ, I am a property owner and I would like to discuss having you manage my property/land.')}`;
-
-      document.getElementById('resCount').innerText = `${list.length} result${list.length === 1 ? '' : 's'}`;
-
-      document.getElementById('pageTitle').innerText = currentStatus !== 'All'
-        ? `Properties for ${currentStatus} | KYEMBEZ Property Management`
-        : `KYEMBEZ Property Management | Real Estate Uganda`;
-
-      if (list.length === 0) {
+      if(list.length === 0) {
         document.getElementById('grid').innerHTML = `
-          <div class="col-span-full text-center py-16 text-ash">
-            <i class="fa-regular fa-folder-open text-2xl mb-3 block"></i>
-            <p class="text-sm">No properties match your search. Try a different area or type.</p>
+          <div class="col-span-full text-center py-12 text-gray-500">
+            No properties found matching your search.
           </div>`;
         return;
       }
 
       document.getElementById('grid').innerHTML = list.map(p => {
-        const status = p.stat || 'Rent';
-        const tagLabel = status === 'Sale' ? 'For Sale' : 'To Let';
-        const priceTag = status === 'Sale' ? 'UGX' : 'UGX / mo';
-        const imgList = (p.images && p.images.length) ? p.images : [FALLBACK_IMG];
-        const coverImg = imgList[0];
-        const safeTitle = escapeHtml(p.t);
-        const safeLoc = escapeHtml(p.l);
-        const safeType = escapeHtml(p.type);
-        const waHref = `https://wa.me/${settingsDoc.ph}?text=${encodeURIComponent('Hi, I am interested in your listing: ' + p.t)}`;
-
-        const thumbnails = imgList.length > 1 ? `
-          <div class="flex space-x-1.5 p-2 bg-ink/60 overflow-x-auto border-t border-line">
+        let status = p.stat || 'Rent';
+        let priceTag = status === 'Sale' ? 'UGX' : 'UGX/mo';
+        
+        let imgList = p.images && p.images.length ? p.images : ['https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=600&q=80'];
+        let coverImg = imgList[0];
+        
+        let thumbnails = imgList.length > 1 ? `
+          <div class="flex space-x-1 p-2 bg-dark/50 overflow-x-auto border-t border-gray-800">
             ${imgList.map(img => `
-              <img src="${escapeHtml(img)}" loading="lazy" onerror="this.src='${FALLBACK_IMG}'" onclick="this.closest('.group').querySelector('.main-img').src=this.src" class="w-10 h-10 object-cover rounded cursor-pointer border border-line hover:border-clay shrink-0">
+              <img src="${img}" onclick="this.closest('.group').querySelector('.main-img').src='${img}'" class="w-10 h-10 object-cover rounded cursor-pointer border border-gray-700 hover:border-brand shrink-0">
             `).join('')}
-          </div>` : '';
-
+          </div>
+        ` : '';
+        
         return `
-        <div class="bg-card border border-line rounded-2xl overflow-hidden group hover:border-clay/40 transition relative flex flex-col">
+        <div class="bg-card border border-gray-800 rounded-2xl overflow-hidden group hover:border-gray-600 transition relative flex flex-col">
           <div class="relative h-48">
-            <img src="${escapeHtml(coverImg)}" loading="lazy" onerror="this.src='${FALLBACK_IMG}'" class="main-img w-full h-full object-cover">
-            <div class="signboard absolute -top-1 left-4 -rotate-3 bg-gold text-ink text-[10px] font-mono font-bold uppercase tracking-wide px-2.5 py-1 rounded shadow-md border border-black/10">${tagLabel}</div>
-            ${isAdmin ? `<button onclick="del('${p.id}')" class="absolute top-3 right-3 bg-clay hover:bg-clay/80 text-sand text-[10px] font-mono uppercase px-2 py-1 rounded shadow transition">Delete</button>` : ''}
+            <img src="${coverImg}" class="main-img w-full h-full object-cover transition duration-300">
+            <div class="absolute top-3 left-3 bg-dark/80 backdrop-blur text-white text-[10px] font-bold uppercase px-2 py-1 rounded">For ${status}</div>
+            ${isAdmin ? `<button onclick="del('${p.id}')" class="absolute top-3 right-3 bg-red-600 hover:bg-red-700 text-white text-[10px] px-2 py-1 rounded shadow">Delete</button>` : ''}
           </div>
           ${thumbnails}
           <div class="p-4 flex-1 flex flex-col">
-            <p class="text-clay text-[10px] font-mono font-bold uppercase tracking-wide mb-1">${safeType} • ${safeLoc}</p>
-            <h3 class="font-semibold text-sm text-sand mb-2 truncate">${safeTitle}</h3>
+            <p class="text-brand text-[10px] font-bold uppercase tracking-wide mb-1">${p.type} • ${p.l}</p>
+            <h3 class="font-bold text-sm text-white mb-2 truncate">${p.t}</h3>
             <div class="flex justify-between items-end mt-auto pt-4">
-              <div class="font-display font-semibold text-lg text-sand leading-none">${p.p.toLocaleString()} <span class="text-[10px] text-ash font-mono font-normal block mt-1.5 tracking-wide">${priceTag}</span></div>
-              <a href="${waHref}" target="_blank" rel="noopener" class="bg-clay/10 hover:bg-clay text-clay hover:text-sand px-4 py-2 rounded-lg text-xs font-mono font-bold uppercase tracking-wide transition">Inquire</a>
+              <div class="font-bold text-lg text-white leading-none">${p.p.toLocaleString()} <span class="text-[10px] text-gray-500 font-normal block mt-1">${priceTag}</span></div>
+              <a href="https://wa.me/${cfg.ph}?text=${encodeURIComponent('Hi, I am interested in your listing: '+p.t)}" target="_blank" class="bg-brand/10 hover:bg-brand text-brand hover:text-white px-4 py-2 rounded-lg text-xs font-bold transition">Inquire</a>
             </div>
           </div>
-        </div>`;
+        </div>`
       }).join('');
     }
 
-    function filter() {
-      const loc = document.getElementById('fLoc').value;
-      const typ = document.getElementById('fType').value;
-      const q = document.getElementById('fQ').value.trim().toLowerCase();
-
-      const filtered = props.filter(p => {
-        const matchLoc = (loc === 'All' || p.l.toLowerCase() === loc.toLowerCase());
-        const matchTyp = (typ === 'All' || p.type === typ);
-        const matchStat = (currentStatus === 'All' || p.stat === currentStatus);
-        const matchQ = !q || p.t.toLowerCase().includes(q) || p.l.toLowerCase().includes(q) || p.type.toLowerCase().includes(q);
-        return matchLoc && matchTyp && matchStat && matchQ;
+    function filter(){ 
+      let loc = document.getElementById('fLoc').value; 
+      let typ = document.getElementById('fType').value; 
+      
+      let filtered = props.filter(p => {
+        let matchLoc = (loc === 'All' || p.l.toLowerCase() === loc.toLowerCase());
+        let matchTyp = (typ === 'All' || p.type === typ);
+        let matchStat = (currentStatus === 'All' || p.stat === currentStatus);
+        return matchLoc && matchTyp && matchStat;
       });
 
       render(filtered);
     }
 
-    function del(docId) {
-      if (!confirm("Are you sure you want to delete this listing?")) return;
-      db.collection("properties").doc(docId).delete().catch(err => alert("Error deleting: " + err.message));
+    function del(docId){ 
+      if(!confirm("Are you sure you want to delete this listing?")) return;
+      db.collection("properties").doc(docId).delete().then(() => {
+        alert("Listing deleted.");
+      }).catch(err => alert("Error deleting: " + err.message));
     }
 
-    function addProp(e) {
-      e.preventDefault();
-      const imgRaw = document.getElementById('pI').value;
-      const imgArray = imgRaw.split(',').map(url => url.trim()).filter(url => url.length > 0);
-
-      if (imgArray.length === 0) {
-        alert('Please add at least one image URL.');
-        return;
-      }
+    function addProp(e){ 
+      e.preventDefault(); 
+      let imgRaw = document.getElementById('pI').value;
+      let imgArray = imgRaw.split(',').map(url => url.trim()).filter(url => url.length > 0);
 
       const newProperty = {
-        title: document.getElementById('pT').value.trim(),
+        title: document.getElementById('pT').value,
         price: Number(document.getElementById('pP').value),
-        location: document.getElementById('pL').value.trim(),
+        location: document.getElementById('pL').value,
         type: document.getElementById('pTy').value,
         stat: document.getElementById('pStat').value,
         images: imgArray,
@@ -620,43 +500,21 @@
       };
 
       db.collection("properties").add(newProperty).then(() => {
-        openModal('addM');
-        e.target.reset();
+        alert("Property published successfully!");
+        openModal('addM'); 
+        e.target.reset(); 
       }).catch(err => alert("Error adding property: " + err.message));
     }
 
-    function saveSet(e) {
-      e.preventDefault();
-      const errEl = document.getElementById('setErr');
-      errEl.classList.add('hidden');
-
-      const phRaw = document.getElementById('sPh').value.replace(/\D/g, '');
-      const newPass = document.getElementById('sPass').value;
-
-      const tasks = [];
-      if (phRaw) {
-        tasks.push(db.collection("settings").doc("site").set({ ph: phRaw }, { merge: true }));
-      }
-      if (newPass) {
-        if (newPass.length < 6) {
-          errEl.innerText = 'Password must be at least 6 characters.';
-          errEl.classList.remove('hidden');
-          return;
-        }
-        tasks.push(firebase.auth().currentUser.updatePassword(newPass));
-      }
-
-      Promise.all(tasks).then(() => {
-        openModal('setM');
-        e.target.reset();
-      }).catch((err) => {
-        errEl.innerText = err.code === 'auth/requires-recent-login'
-          ? 'Please log out and back in, then retry changing your password.'
-          : ('Error saving: ' + err.message);
-        errEl.classList.remove('hidden');
-      });
+    function saveSet(e){ 
+      e.preventDefault(); 
+      if(document.getElementById('sPh').value) cfg.ph = document.getElementById('sPh').value.replace(/\D/g,''); 
+      if(document.getElementById('sPin').value) cfg.pin = document.getElementById('sPin').value; 
+      localStorage.setItem('k_c_3', JSON.stringify(cfg)); 
+      filter(); 
+      openModal('setM'); 
+      e.target.reset(); 
     }
   </script>
 </body>
 </html>
-```
