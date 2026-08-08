@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary SEO Meta Tags -->
-  <title>KYEMBEZ Property Management | Real Estate Uganda</title>
+  <title id="pageTitle">KYEMBEZ Property Management | Real Estate Uganda</title>
   <meta name="title" content="KYEMBEZ Property Management | Real Estate Uganda">
   <meta name="description" content="Search thousands of homes, land, and commercial property for rent or sale across Uganda with KYEMBEZ Property Management.">
   <meta name="keywords" content="KYEMBEZ, Property Management Uganda, Real Estate Kampala, Rent House Uganda, Land for Sale Uganda">
   <meta name="robots" content="index, follow">
 
+  <!-- CANONICAL TAG TO PREVENT DUPLICATE CONTENT PENALTIES -->
+  <link rel="canonical" href="https://kyembez.vercel.app/" />
+
   <!-- GOOGLE SITE VERIFICATION -->
-   
-   <meta name="google-site-verification" content="0gnqCZmjHBVATsy0lJ2vGmxE11tRBcPhep7rlZfatEk" />
+  <meta name="google-site-verification" content="0gnqCZmjHBVATsy0lJ2vGmxE11tRBcPhep7rlZfatEk" />
 
   <!-- OPEN GRAPH / SOCIAL MEDIA PREVIEW -->
   <meta property="og:type" content="website" />
@@ -72,9 +74,9 @@
       theme: {
         extend: {
           colors: {
-            brand: '#e84c4c', // Signature Coral Red
-            dark: '#13141c',  // Deep navy background
-            card: '#1c1d27',  // Card container navy
+            brand: '#e84c4c', 
+            dark: '#13141c',  
+            card: '#1c1d27',  
           }
         }
       }
@@ -318,6 +320,12 @@
     let isAdmin = false;
     let currentStatus = 'All';
 
+    // Check URL query params on load (e.g. ?status=Rent)
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.has('status')) {
+      currentStatus = urlParams.get('status');
+    }
+
     // 3. Real-time Firebase Listener
     function initFirebaseListener() {
       db.collection("properties").onSnapshot((snapshot) => {
@@ -334,6 +342,17 @@
             images: data.images || (data.i ? [data.i] : [])
           });
         });
+        
+        // Sync button UI with initial query param if present
+        document.querySelectorAll('.tab-btn').forEach(b => {
+          b.classList.remove('bg-red-100', 'text-brand');
+          b.classList.add('text-gray-500');
+          if(b.innerText.toLowerCase().includes(currentStatus.toLowerCase()) || (currentStatus === 'All' && b.innerText.includes('All'))) {
+            b.classList.remove('text-gray-500');
+            b.classList.add('bg-red-100', 'text-brand');
+          }
+        });
+
         filter();
       }, (error) => {
         console.error("Firebase read error:", error);
@@ -368,6 +387,11 @@
 
     function setStatusFilter(stat, btn) {
       currentStatus = stat;
+      
+      // Update URL without reloading page so Googlebot sees unique parameter structures
+      const newUrl = stat === 'All' ? window.location.pathname : `?status=${stat}`;
+      window.history.pushState({}, '', newUrl);
+
       document.querySelectorAll('.tab-btn').forEach(b => {
         b.classList.remove('bg-red-100', 'text-brand');
         b.classList.add('text-gray-500');
@@ -383,6 +407,13 @@
       
       document.getElementById('resCount').innerText = `${list.length} results`;
       
+      // Update page title dynamically based on filter to avoid generic duplicate titles
+      if(currentStatus !== 'All') {
+        document.getElementById('pageTitle').innerText = `Properties for ${currentStatus} | KYEMBEZ Property Management`;
+      } else {
+        document.getElementById('pageTitle').innerText = `KYEMBEZ Property Management | Real Estate Uganda`;
+      }
+
       if(list.length === 0) {
         document.getElementById('grid').innerHTML = `
           <div class="col-span-full text-center py-12 text-gray-500">
